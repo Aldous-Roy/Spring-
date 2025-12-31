@@ -4,6 +4,8 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="doctor" class="com.aldous_roy.Doctor"></bean>
+    <bean id="doctor" class="com.aldous_roy.Doctor">
+        <constructor-arg value="MBBS"/>
+    </bean>
     <bean id="nurse" class="com.aldous_roy.Nurse"></bean>
 </beans>

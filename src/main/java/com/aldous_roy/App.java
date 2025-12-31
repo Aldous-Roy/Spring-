@@ -13,7 +13,8 @@ public class App
     {
         ApplicationContext context=new ClassPathXmlApplicationContext("spring.xml");
 
-        Staff staff= context.getBean(Nurse.class);
+        Doctor staff= context.getBean(Doctor.class);
         staff.assist();
+        System.out.println(staff.getQualification());
     }
 }
