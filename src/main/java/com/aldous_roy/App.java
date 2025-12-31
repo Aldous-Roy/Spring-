@@ -13,10 +13,7 @@ public class App
     {
         ApplicationContext context=new ClassPathXmlApplicationContext("spring.xml");
 
-        Doctor doctor = context.getBean(Doctor.class);
-        Nurse nurse = context.getBean(Nurse.class);
-        doctor.assist();
-        nurse.assist();
-        System.out.println("This is the main class");
+        Staff staff= context.getBean(Nurse.class);
+        staff.assist();
     }
 }
